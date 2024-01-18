@@ -116,7 +116,7 @@ a.active,a:hover{
     display: flex;
     position: relative;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 20px auto;
     z-index: 1;
     padding-top: 80px;
 }
@@ -162,6 +162,90 @@ a.active,a:hover{
         padding: 10px; 
     }
 }
+/* search */
+.search-wrapper{
+    width: 60%;
+    margin: auto;
+    min-width: 300px;
+    height:3.5rem;
+    position:relative;
+}
+.search-box{
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow:rgba(2,11,20,0.2)0px 5px 15px ;
+    top:-45%;
+    height: 100%;
+    width: 100%;
+}
+.search-card{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.5rem;
+
+}
+.search-input{
+    height:100%;
+    width:100%;
+    border: none;
+    padding: 0.5rem;
+}
+.search-button{
+    width: 200px;
+    background: #9620c1;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-box{
+    width: 100%;
+    height:auto;
+    font-size: 0.8rem;
+    width:60%;
+    min-width:300px;
+    margin: auto;
+
+}
+.filter-dropdown{
+    width: 100%;
+    border-bottom: 1px solid #9620c1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:0.3rem;
+
+}
+.filter-select{
+    border: none;
+    padding:0.2rem;
+    margin:5px;
+
+}
+.filter-select:hover{
+    background: whitesmoke;
+}
+
+.filter-chosen{
+    width: 100%;
+    padding:0.3rem;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 0.5rem;
+}
+.chosen-card{
+    background: #9620c1;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    cursor:pointer;
+    color: white;
+    margin: 5px;
+}
+
+
+
 /* banner*/
 .banner-section {
     display: flex;
@@ -411,7 +495,108 @@ a.active,a:hover{
 
 
 /* review */
+#testimonial_area{
+    background: #9620c1;
+    padding: 10% 0;
+}
+#testimonial_area >h3{
+    text-align: center;
+    color:white;
+    margin-bottom: 50px;
+   
+}
+.box-area{
+    padding:30px;
+    position:relative;
+    display:block;
+    background: white;
+    color:#0000;
+    box-shadow: rgba(0,0,0,0.35) 0 5px;
+    margin: 40px 0;
 
+}
+.box-area h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #9620c1;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.box-area span{
+    color:#666;
+    display: block;
+    font-size: 13px;
+    margin: 0 0 10px;
+    font-weight: 400;
+    text-align: center;
+}
+.box-area .content{
+    color:#222;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.box-area .socials{
+    text-align: center;
+    color:#9620c1;
+    font-size: 0.9rem;
+    margin-top:8px;
+   
+}
+.box-area .img-area{
+    width: 90px;
+    height:90px;
+    position: absolute;
+    top:-40px;
+    left:0;
+    bottom:0;
+    margin:0 auto;
+    right:0;
+    z-index:2;
+    border:5px solid white;
+    border-radius:50%;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+
+}
+.box-area .img-area img{
+    width:500%;
+    height:auto;
+    border-radius: 50%;
+    
+   
+}
+#testimonial_area .owl-nav{
+    position: relative;
+    top: auto; 
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px; 
+
+}
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #1c1c1c;
+    border-radius: 50%;
+    text-align: center;
+    background: whitesmoke;
+    display: inline-block; 
+    margin: 0 30px; 
+}
+#testimonial_area .owl-prev{
+    left:-60px;
+    top:-30px;
+
+}
+#testimonial_area .owl-next{
+    right:-60px;
+    top:-30px;
+    
+}
 
 
 /*blogs */
@@ -420,12 +605,17 @@ a.active,a:hover{
     height:auto;
     text-align: center;
     padding: 5rem 1rem;
+
+   
 }
 .blog > h1{
     color: #9620c1;
+    text-align: center;
+    margin-top: 20px;
 }
 .blog > p{
     color: #666;
+    text-align: center;
 }
 
 .blog-wrapper{
@@ -434,6 +624,7 @@ a.active,a:hover{
     justify-content: center;
     width: 100%;
     padding:1rem;
+    margin-bottom: 40px;
 }
 .blog-card{
     width: 300px;

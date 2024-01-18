@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="dicoding:email" content="elysaherdiani@gmail.com">
-    <title>vacansive</title>
+    <title>VacanSive | Vacancy for Inclusive</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="assets/images/faviconn.png" type="image/png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 <body>
     <!-- navbar -->
     <nav>
@@ -21,12 +24,72 @@
             <li><a href="#about">About</a></li>
             <li><a href="#jobs">Jobs</a></li>
             <li><a href="#companies">Companies</a></li>
+            <li><a href="#testimonial_area">Review</a></li>
             <li><a href="#blog">Blogs</a></li>
         </ul>
     </nav>
     <!-- home -->
   <div class="homepage" id="homepage"> 
 	<source src="assets/images/image1.jpg">
+  </div>
+  <!-- search bar-->
+  <div class="search-wrapper">
+    <div class="search-box">
+        <div class="search-card">
+            <input class="search-input" type="text" placeholder="Search jobs..">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+  </div>
+  <!-- filter box -->
+  <div class="filter-box">
+    <div class="filter-dropdown">
+        <select class="filter-select" id="job-level" name="job-level">
+            <option>Job Level</option>
+            <option>Entry</option>
+            <option>Mid-Senior</option>
+            <option>Senior</option>
+        </select>
+        <select class="filter-select" id="job-function" name="job-function">
+            <option>Job Function</option>
+            <option>Marketing</option>
+            <option>IT</option>
+            <option>UI/UX</option>
+        </select>
+        <select class="filter-select" id="employment" name="employment">
+            <option>Employment Type</option>
+            <option>Full-Time</option>
+            <option>Freelance</option>
+            <option>Internship</option>
+            <option>Part Time</option>
+        </select>
+        <select class="filter-select" id="location" name="location">
+            <option>Location</option>
+            <option>WFO</option>
+            <option>Hybrid</option>
+            <option>Remote</option>
+        </select>
+        <select class="filter-select" id="education" name="education">
+            <option>Education</option>
+            <option>High School</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+        </select>
+    </div>
+    <div class="filter-chosen">
+        <div class="chosen-card">
+            Remote <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="chosen-card">
+            Full-Time <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="chosen-card">
+            Web Developer <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="chosen-card">
+            Entry Level <i class="fas fa-times-circle"></i>
+        </div>
+    </div>
   </div>
   <!--about -->
   <section class="about-section" id="about">
@@ -78,11 +141,11 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
         <!-- job 1-->
         <div class="job-card">
             <div class="job-name">
-                <img class="job-profile" src="assets/images/Mantappu-Logo-s.svg">
+                <img class="job-profile" src="assets/images/starbucks-coffe-logo-hd-image-15.png">
                 <div class="job-detail">
                     <h4>Starbucks</h4>
                     <h3>Barista</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>*Welcoming to individuals with hearing impairments</p>
                 </div>
             </div>
             <div class="job-label">
@@ -97,11 +160,11 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
         <!-- job 2-->
         <div class="job-card">
             <div class="job-name">
-                <img class="job-profile" src="assets/images/Mantappu-Logo-s.svg">
+                <img class="job-profile" src="assets/images/amazon.svg">
                 <div class="job-detail">
                     <h4>Amazon</h4>
                     <h3>IT Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p>*Welcoming applicants with disabilities </p>
                 </div>
             </div>
             <div class="job-label">
@@ -116,11 +179,11 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
         <!--job 3-->
         <div class="job-card">
             <div class="job-name">
-                <img class="job-profile" src="assets/images/Mantappu-Logo-s.svg">
+                <img class="job-profile" src="assets/images/apple.svg">
                 <div class="job-detail">
-                    <h4>Ebay</h4>
+                    <h4>Apple Inc.</h4>
                     <h3>Data Analyst</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>*Welcoming to those with communication challenges</p>
                 </div>
             </div>
             <div class="job-label">
@@ -135,11 +198,11 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
         <!--job 4 -->
         <div class="job-card">
             <div class="job-name">
-                <img class="job-profile" src="assets/images/Mantappu-Logo-s.svg">
+                <img class="job-profile" src="assets/images/meta.svg">
                 <div class="job-detail">
-                    <h4>Mantappu Corp.</h4>
+                    <h4>Meta</h4>
                     <h3>Creative</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>*Welcoming to individuals with dyslexia</p>
                 </div>
             </div>
             <div class="job-label">
@@ -154,11 +217,11 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
         <!--job 5-->
         <div class="job-card">
             <div class="job-name">
-                <img class="job-profile" src="assets/images/Mantappu-Logo-s.svg">
+                <img class="job-profile" src="assets/images/google.png">
                 <div class="job-detail">
-                    <h4>Google Inc.</h4>
+                    <h4>Google LLC</h4>
                     <h3>Software Engineer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p>*Welcoming to candidates on the autism spectrum </p>
                 </div>
             </div>
             <div class="job-label">
@@ -176,120 +239,251 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
     <section class="join">
         <div class="join-detail">
             <h1 class="section-title">LETS START YOUR NEW JOB WITH US</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus aut possimus.</P>
+            <P>Embark on your new journey with us, where diversity is celebrated, 
+               and all talents, including yours, are valued and embraced!</P>
         </div>
         <button class="join-button">JOIN NOW!</button>
     </section>
     <!-- featured company -->
     <section class="featured" id="companies">
         <h1 class="section-title">Trusted Companies</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            At placeat nobis dignissimos, repellendus, doloribus eius nesciunt, consequatur in assumenda quae 
-            quidem sequi repellat fugit. </p>
+        <p>Discover a workplace where integrity and excellence thrive. 
+            Our commitment to a supportive environment ensures that every individual is valued</p>
             <br>
             <div class="featured-wrapper">
                 <!-- card 1-->
                 <div class="featured-card">
                     <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
                     <p>Mantappu Corp.</p>
-                    <button class="featured-button">View 2 jobs</button>
+                    <button class="featured-button">View job</button>
                 </div>
                 <!-- card 2 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
+                    <img class="featured-image" src="assets/images/amazon.svg">
+                    <p>Amazon</p>
                     <button class="featured-button">View 2 jobs</button>
                 </div>
                 <!-- card 3 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
+                    <img class="featured-image" src="assets/images/starbucks-coffe-logo-hd-image-15.png">
+                    <p>Starbucks</p>
                     <button class="featured-button">View 2 jobs</button>
                 </div>
                 <!--card 4 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
-                    <button class="featured-button">View 2 jobs</button>
+                    <img class="featured-image" src="assets/images/ebay-ar21.svg">
+                    <p>eBay</p>
+                    <button class="featured-button">View job</button>
                 </div>
                 <!-- card 5 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
+                    <img class="featured-image" src="assets/images/tesla.png">
+                    <p>Tesla</p>
                     <button class="featured-button">View 2 jobs</button>
                 </div>
                 <!-- card 6 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
-                    <button class="featured-button">View 2 jobs</button>
+                    <img class="featured-image" src="assets/images/youtube.png">
+                    <p>YouTube</p>
+                    <button class="featured-button">View 5 jobs</button>
                 </div>
                 <!-- card 7 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
-                    <button class="featured-button">View 2 jobs</button>
+                    <img class="featured-image" src="assets/images/meta.svg">
+                    <p>Meta</p>
+                    <button class="featured-button">View job</button>
                 </div>
                 <!-- card 8 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
+                    <img class="featured-image" src="assets/images/google.png">
+                    <p>Google LLC </p>
                     <button class="featured-button">View 2 jobs</button>
                 </div>
                 <!-- card 9 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
-                    <button class="featured-button">View 2 jobs</button>
+                    <img class="featured-image" src="assets/images/apple.svg">
+                    <p>Apple Inc.</p>
+                    <button class="featured-button">View job</button>
                 </div>
                 <!-- card 10 -->
                 <div class="featured-card">
-                    <img class="featured-image" src="assets/images/Mantappu-Logo-s.svg">
-                    <p>Mantappu Corp.</p>
+                    <img class="featured-image" src="assets/images/nvidia.svg">
+                    <p>NVIDIA</p>
                     <button class="featured-button">View 2 jobs</button>
                 </div>
             </div>
     </section>
 
     <!-- review -->
-    
+    <section id="testimonial_area">
+        <h3 class="section-title">What Our Clients Say...</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial_slider_area text-center owl-carousel">
+                        <!-- review 1 -->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review1.jpg" alt="">
+                            </div>
+                            <h5>Rolf Kazloŭ</h5>
+                            <span>Mechanical Engineer/Speech-impaired</span>
+                            <p class="content">
+                                As a speech-impaired individual, navigating the job market can sometimes be a challenging experience. 
+                                However, my journey took a positive turn when I discovered VacanSive. 
+                                This platform has proven to be an invaluable resource for someone like me.
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                        <!-- review 2 -->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review2.jpg" alt="">
+                            </div>
+                            <h5>Tzofiya O'Keefe</h5>
+                            <span>Marketing Specialist/Hearing-impaired</span>
+                            <p class="content">
+                                The job descriptions themselves are detailed and often include information about workplace accommodations, 
+                                demonstrating the commitment of the participating companies to fostering a diverse and 
+                                supportive work environment.
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                        <!-- review 3 -->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review3.jpg" alt="">
+                            </div>
+                            <h5>Shams al-Din</h5>
+                            <span>Content Strategist/Dyslexia</span>
+                            <p class="content">
+                                The clean and intuitive interface of this portal makes it easy for individuals with dyslexia 
+                                to browse through job listings without feeling overwhelmed. The use of clear fonts, ample spacing, 
+                                and simple navigation menus greatly contributes to a positive user experience.
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                        <!-- review 4 -->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review4.jpg" alt="">
+                            </div>
+                            <h5>Clarissa Trevis</h5>
+                            <span>Social Media Manager/Autism</span>
+                            <p class="content">
+                                As someone on the autism spectrum, navigating the job market can be a challenging experience. 
+                                However, my encounter with VacanSive has been remarkably positive and inclusive.
+                                This is not just a job portal; 
+                                it's a platform that recognizes and embraces the diversity of its users. 
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                        <!-- review 5 -->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review5.jpg" alt="">
+                            </div>
+                            <h5> Celyn Michelakos</h5>
+                            <span>Graphic Designer/Hearing-impaired</span>
+                            <p class="content">
+                                I recently had the opportunity to explore this job portal, and I must say it has been a 
+                                refreshing experience for someone like me who is hearing impaired. 
+                                The platform not only provides a user-friendly interface but also goes the extra mile to ensure inclusivity.
+
+ 
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                        <!-- review 6-->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="assets/images/review6.jpg" alt="">
+                            </div>
+                            <h5>Deimos Andrius</h5>
+                            <span>App Developer/Speech-impaired</span>
+                            <p class="content">
+                                As a speech-impaired individual, finding a job portal that understands and accommodates 
+                                my unique needs has been a game-changer. This platform goes above and beyond in fostering inclusivity.
+                                I highly recommend it to all job seekers, especially those with speech impairments.
+                            </p>
+                            <h6 class="socials">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-facebook-f"></i>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 
     <!--blogs-->
     <section class="blog" id="blog">
         <h1 class="section-title">Career Advices</h1>
-        <p>Learn More Career Tips from Company's Recruiters</p>
+        <p>Learn More Career Tips & Inspirations from Company's Recruiters</p>
         <div class="blog-wrapper">
             <!-- blog 1 -->
             <div class="blog-card"> 
-                <img class="blog-image" src="assets/images/review3.jpg">
+                <img class="blog-image" src="assets/images/blog1.jpg">
                 <div class="blog-detail">
-                    <span>11 Apr 2020</span>
-                    <h4>How to enjoy your work</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span>25 Dec 2023</span>
+                    <h4>How to Enjoy Your Work</h4>
+                    <p>Read and share our 7 top tips on how we can all be more 
+                       inclusive at work by being authentic, challenging our own stereotypes and having open conversations...</p>
                     <hr class="divider">
                     <a href="#" class="blog-more">Read More</a>
                 </div>
             </div>
             <!-- blog 2 -->
             <div class="blog-card"> 
-                <img class="blog-image" src="assets/images/review3.jpg">
+                <img class="blog-image" src="assets/images/blog2.jpg">
                 <div class="blog-detail">
-                    <span>11 Apr 2020</span>
-                    <h4>How to enjoy your work</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span>07 Jan 2024</span>
+                    <h4>How to Make an Inclusive Workplace for People Who Are Blind</h4>
+                    <p>Creating a more inclusive workplace for people who are blind 
+                       might seem like a daunting task...</p>
                     <hr class="divider">
                     <a href="#" class="blog-more">Read More</a>
                 </div>
             </div>
             <!-- blog 3 -->
             <div class="blog-card"> 
-                <img class="blog-image" src="assets/images/review3.jpg">
+                <img class="blog-image" src="assets/images/blog3.jpg">
                 <div class="blog-detail">
-                    <span>11 Apr 2020</span>
-                    <h4>How to enjoy your work</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span>11 Jan 2024</span>
+                    <h4>Inclusive Fashion | The New Frontier to Sustainable Fashion</h4>
+                    <p>Adaptive and inclusive fashion integrates into its design “easy solutions like 
+                        magnetic closures instead of buttons,..</p>
                     <hr class="divider">
                     <a href="#" class="blog-more">Read More</a>
                 </div>
@@ -300,8 +494,8 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
     <footer>
         <div class="footer-wrapper">
             <h3>VacanSive</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aliquam 
-                non reprehenderit, eaque fugiat similique non reprehenderit, eaque fugiat similique </p>
+            <p>Explore exciting opportunities with us. We believe in creating an inclusive and vibrant workplace 
+                where everyone's unique talents are celebrated. Join us on the journey to a fulfilling career! </p>
                 <div class="social-media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -341,6 +535,32 @@ Join us on this journey. Let's redefine diversity in the professional landscape 
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+    $(".testimonial_slider_area").owlCarousel({
+        autoplay:true,
+        slideSpeed:3000,
+        items:3,
+        nav:true,
+        navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+        margin:30,
+        dots:false,
+        responsive:{
+            320:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+</script>
 </body>
 </html>
